@@ -1,7 +1,5 @@
 ## Prerequisites
 
-You need docker and docker compose on your computer to complete this task.
-
 * [Download](https://www.docker.com/community-edition#download)
 * [MacOS](https://docs.docker.com/docker-for-mac/install/)
 * [Windows](https://docs.docker.com/docker-for-windows/install/)
@@ -30,13 +28,6 @@ If you happen to have the postgres client tools installed (not required for this
 ```sh
 psql -h localhost -p 5432 -U postgres
 ```
-
-## Requirements
-
-We expect that solving this challenge will take you about 3-6 hours to complete.  
-Ideally we receive an archive which contains a docker compose file that allows us to set up the stack you've used, and the API you've built during this project.
-If you prefer a different approach, please include the steps to setup and execute.
-If there is a different database that you would like to use, please feel free to use that.
 
 ### Words API
 
