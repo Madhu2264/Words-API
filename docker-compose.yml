@@ -1,0 +1,26 @@
+version: "2"
+services:
+  web:
+    build: ./web
+    volumes:
+     - ./web:/app
+    ports:
+     - "5000:5000"
+    depends_on:
+     - "postgres"
+     - "dataservice"
+    container_name: "netskope"
+    tty: true
+
+  postgres:
+    hostname: postgres
+    image: "mdillon/postgis:10-alpine"
+    ports:
+     - "5432:5432"
+
+  dataservice:
+    image: nginx:alpine
+    volumes:
+    - "./dataservice:/usr/share/nginx/html"
+    ports:
+    - "80:80"
